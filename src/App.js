@@ -2,7 +2,6 @@ import React from 'react'
 import InputPanel from './InputPanel';
 import HammingGraph from './HammingGraph';
 
-
 export default class App extends React.Component {
     state = {
         values: []
