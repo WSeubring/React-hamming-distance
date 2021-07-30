@@ -22,7 +22,7 @@ export default class HammingGraph extends React.Component {
         return (
             <div>
                 <h1> Hamming distance</h1>
-                {products.length > 2 
+                {products.length >= 1 
                     ? <MyHistogram data={products}/>
                     : <p style={{"color":"red"}}>Please add at least two values to render the histogram</p>
                 }
