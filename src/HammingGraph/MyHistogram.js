@@ -52,7 +52,7 @@ export default class MyHistogram extends React.Component{
             showArea={false}
             kernel="gaussian"
           />
-          <XAxis tickValues={[1,2,3,4,5]}/>
+          <XAxis tickValues={this.props.tickValues} label={this.props.xlabel}/>
           <YAxis />
         </ResponsiveHistogram>
       </div>
