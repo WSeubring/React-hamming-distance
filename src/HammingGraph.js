@@ -1,5 +1,6 @@
 import React from 'react'
 import hammingDistance from 'hamming'
+import MyHistogram from './MyHistogram'
 
 export default class HammingGraph extends React.Component {
     getHammingDistances = (values) => {
@@ -17,20 +18,16 @@ export default class HammingGraph extends React.Component {
     
     render() {
         const products = this.getHammingDistances(this.props.values)
-        // FIXME: Index keys are not recommended
-        const itemList = products.map((item, index) => {
-            return (
-                <li key={index}>{item}</li>
-            )
-        });
 
         return (
             <div>
                 <h1> Hamming distance</h1>
-                <ul>
-                    {itemList}
-                </ul>
+                {products.length > 2 
+                    ? <MyHistogram data={products}/>
+                    : <p style={{"color":"red"}}>Please add at least two values to render the histogram</p>
+                }
             </div>
         );
         }
     }
+
