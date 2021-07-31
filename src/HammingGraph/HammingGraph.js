@@ -24,12 +24,12 @@ export default class HammingGraph extends React.Component {
 
         return (
             <div>
-                <h1 style={{textAlign:'center'}}> Hamming distance graph</h1>
+                <h1 className='align-center'> Hamming distance graph</h1>
 
                 {/* Check if enough data is available to draw histogram, else display message */}
                 {products.length >= 1 
                     ? <MyHistogram data={products} tickValues={[1,2,3,4,5]} xlabel='Hamming distance'/>
-                    : <p style={{"color":"red", textAlign:'center'}}>Please add at least two values to render the histogram</p>
+                    : <p className='red align-center'>Please add at least two values to render the histogram</p>
                 }
             </div>
         );

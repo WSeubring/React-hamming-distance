@@ -26,7 +26,7 @@ export default class MyHistogram extends React.Component{
     } 
 
     return (
-      <div className="App" style={{ height: 300 }}>
+      <div style={{ height: 300 }}>
         <ResponsiveHistogram
           ariaLabel="histogram"
           orientation="vertical"
@@ -45,6 +45,8 @@ export default class MyHistogram extends React.Component{
         >
           <BarSeries animated rawData={rawData} 
             fillOpacity={0.35}
+            stroke="#ff9203"
+            fill="#ff9203"
           />
           <DensitySeries animated rawData={rawData} 
             stroke="#FF0000"

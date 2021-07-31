@@ -33,10 +33,12 @@ export default class App extends React.Component {
             <div>
                 <Row gutter={[16, 16]} justify='center'>
                     <Col span={10} padding={20}>
-                        <Card title="Add values" style={{boxShadow:2}}>
+                        <Card className="card" title="Add values">
                             <InputForm  items={this.state.values} onAdd={this.handleAdd}/> 
                             <Divider> values</Divider>
-                            <SortedItemList items={this.state.values}/>
+                            <div className="sorted-list">
+                                <SortedItemList  items={this.state.values}/>
+                            </div>
                             <Divider></Divider>
                             <Button block icon={<RollbackOutlined/>} onClick={this.onResetClick}>Clear values</Button>
                         </Card>

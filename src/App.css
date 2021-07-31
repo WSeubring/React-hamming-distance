@@ -1,1 +1,19 @@
 @import '~antd/dist/antd.css';
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+}
+
+.sorted-list{
+    text-align: left;
+    font-size: 1.125em;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.red{
+    color: red;
+}
