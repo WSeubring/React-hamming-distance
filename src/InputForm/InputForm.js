@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Form, Input , Button, Row, Col, Card, Divider } from 'antd';
-import { PlusOutlined,  RollbackOutlined} from '@ant-design/icons';
+import { Form, Input , Button } from 'antd';
+import { PlusOutlined} from '@ant-design/icons';
 
 export default class InputForm extends React.Component {
     formRef = React.createRef();
