@@ -6,7 +6,7 @@ pairs in a histogram.
 In general I am satisfied with the result, it was interseting to work with React. I believe all requirements are included. There were are a few assumptions and points of improvement listed below.
 
 ## Assumtions and improvements
-- I assumed to sorted string, meant visualising the inputs sorted. But thinking about it this could also be each string sorted individualy, which would allow for a more optimal computation of the hamming distance. (e.g. skip index till value is matched in other and use min and max values for early stop)
+- I assumed the sorted string, meant visualising the inputs sorted. But thinking about it this could also be each string sorted individualy, which would allow for a more optimal computation of the hamming distance. (e.g. skip index till value is matched in other and use min and max values for early stop)
 
 - For the visualization of the hamming distance I assumed a histogram with an overlapping gaussain function on the data, would show the data nicely.
 
